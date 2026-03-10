@@ -23,23 +23,23 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="stone-texture text-amber-50">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-2xl font-bold mb-4 text-amber-100" style={{fontFamily: "'Playfair Display', serif"}}>
               {restaurantInfo.name}
             </h3>
-            <p className="text-gray-400 mb-4">
+            <p className="text-amber-200/80 mb-4 text-sm" style={{fontFamily: "'Lora', serif"}}>
               {t(
                 'Автентична българска кухня и ароматна италианска пица в сърцето на Драгалевци',
                 'Authentic Bulgarian cuisine and aromatic Italian pizza in the heart of Dragalevtsi'
               )}
             </p>
             <div className="flex items-center gap-2">
-              <span className="text-yellow-400 text-xl">⭐ {restaurantInfo.rating}</span>
-              <span className="text-gray-400 text-sm">
+              <span className="text-yellow-500 text-xl">⭐ {restaurantInfo.rating}</span>
+              <span className="text-amber-300/70 text-sm">
                 ({restaurantInfo.reviewCount.toLocaleString()}+ {t('отзива', 'reviews')})
               </span>
             </div>

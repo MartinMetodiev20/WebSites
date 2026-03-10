@@ -58,7 +58,7 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {t('Резервация и контакти', 'Reservation & Contact')}
           </h2>
-          <div className="w-20 h-1 bg-red-600 mx-auto mb-6" />
+          <div className="w-20 h-1 bg-amber-700 mx-auto mb-6" />
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             {t(
               'Резервирайте маса или се свържете с нас',
@@ -74,7 +74,7 @@ const Contact = () => {
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="bg-red-100 p-3 rounded-full">
-                    <MapPin className="h-6 w-6 text-red-600" />
+                    <MapPin className="h-6 w-6 text-amber-800" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2">
@@ -92,7 +92,7 @@ const Contact = () => {
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="bg-red-100 p-3 rounded-full">
-                    <Phone className="h-6 w-6 text-red-600" />
+                    <Phone className="h-6 w-6 text-amber-800" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2">
@@ -100,7 +100,7 @@ const Contact = () => {
                     </h3>
                     <a 
                       href={`tel:${restaurantInfo.phone}`}
-                      className="text-red-600 hover:text-red-700 font-medium"
+                      className="text-amber-800 hover:text-amber-900 font-medium"
                     >
                       {restaurantInfo.phone}
                     </a>
@@ -113,7 +113,7 @@ const Contact = () => {
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="bg-red-100 p-3 rounded-full">
-                    <Clock className="h-6 w-6 text-red-600" />
+                    <Clock className="h-6 w-6 text-amber-800" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2">
@@ -131,7 +131,7 @@ const Contact = () => {
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="bg-red-100 p-3 rounded-full">
-                    <Facebook className="h-6 w-6 text-red-600" />
+                    <Facebook className="h-6 w-6 text-amber-800" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2">
@@ -141,7 +141,7 @@ const Contact = () => {
                       href={restaurantInfo.facebook}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-red-600 hover:text-red-700 font-medium"
+                      className="text-amber-800 hover:text-amber-900 font-medium"
                     >
                       Facebook
                     </a>
@@ -161,7 +161,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="res-name">
-                      {t('Име', 'Name')} <span className="text-red-600">*</span>
+                      {t('Име', 'Name')} <span className="text-amber-800">*</span>
                     </Label>
                     <Input
                       id="res-name"
@@ -174,7 +174,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <Label htmlFor="res-phone">
-                      {t('Телефон', 'Phone')} <span className="text-red-600">*</span>
+                      {t('Телефон', 'Phone')} <span className="text-amber-800">*</span>
                     </Label>
                     <Input
                       id="res-phone"
@@ -205,7 +205,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div>
                     <Label htmlFor="res-date">
-                      {t('Дата', 'Date')} <span className="text-red-600">*</span>
+                      {t('Дата', 'Date')} <span className="text-amber-800">*</span>
                     </Label>
                     <Input
                       id="res-date"
@@ -219,7 +219,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <Label htmlFor="res-time">
-                      {t('Час', 'Time')} <span className="text-red-600">*</span>
+                      {t('Час', 'Time')} <span className="text-amber-800">*</span>
                     </Label>
                     <Input
                       id="res-time"
@@ -232,7 +232,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <Label htmlFor="res-guests">
-                      {t('Гости', 'Guests')} <span className="text-red-600">*</span>
+                      {t('Гости', 'Guests')} <span className="text-amber-800">*</span>
                     </Label>
                     <Input
                       id="res-guests"
@@ -264,7 +264,7 @@ const Contact = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-red-600 hover:bg-red-700 text-white py-6 text-lg"
+                  className="w-full bg-amber-700 hover:bg-amber-800 text-white py-6 text-lg"
                   size="lg"
                 >
                   {isSubmitting ? (

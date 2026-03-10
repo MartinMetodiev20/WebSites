@@ -5,38 +5,38 @@ const About = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section id="about" className="py-20 bg-gradient-to-b from-amber-50 to-stone-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-6" style={{fontFamily: "'Playfair Display', serif"}}>
                 {t('За нас', 'About Us')}
               </h2>
-              <div className="w-20 h-1 bg-red-600 mb-6" />
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <div className="tavern-divider mb-6" />
+              <p className="text-lg text-stone-700 mb-6 leading-relaxed" style={{fontFamily: "'Lora', serif"}}>
                 {t(
                   'Пицария Ресторант "Чичовци" е любимо място в Драгалевци, където традиционната българска кухня се среща с ароматна италианска пица.',
                   'Pizzeria Restaurant "Chichovtsi" is a favorite place in Dragalevtsi, where traditional Bulgarian cuisine meets aromatic Italian pizza.'
                 )}
               </p>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <p className="text-lg text-stone-700 mb-6 leading-relaxed" style={{fontFamily: "'Lora', serif"}}>
                 {t(
                   'Нашият ресторант предлага уютна атмосфера, качествени продукти и приятелско обслужване. Всяка вечер при нас е специална.',
                   'Our restaurant offers a cozy atmosphere, quality products and friendly service. Every evening with us is special.'
                 )}
               </p>
               <div className="grid grid-cols-2 gap-6 mt-8">
-                <div className="border-l-4 border-red-600 pl-4">
-                  <div className="text-3xl font-bold text-red-600 mb-2">15+</div>
-                  <div className="text-gray-600">
+                <div className="border-l-4 border-amber-700 pl-4 bg-white/50 py-3 rounded-r">
+                  <div className="text-3xl font-bold text-amber-800 mb-2">15+</div>
+                  <div className="text-stone-600" style={{fontFamily: "'Lora', serif"}}>
                     {t('Години опит', 'Years of Experience')}
                   </div>
                 </div>
-                <div className="border-l-4 border-red-600 pl-4">
-                  <div className="text-3xl font-bold text-red-600 mb-2">50+</div>
-                  <div className="text-gray-600">
+                <div className="border-l-4 border-amber-700 pl-4 bg-white/50 py-3 rounded-r">
+                  <div className="text-3xl font-bold text-amber-800 mb-2">50+</div>
+                  <div className="text-stone-600" style={{fontFamily: "'Lora', serif"}}>
                     {t('Вкусни ястия', 'Delicious Dishes')}
                   </div>
                 </div>

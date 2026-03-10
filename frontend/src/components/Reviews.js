@@ -92,7 +92,7 @@ const Reviews = () => {
             href="https://www.google.com/search?q=Chichovtsi+Restaurant"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-red-600 hover:text-red-700 font-semibold inline-flex items-center gap-2 transition-colors"
+            className="text-amber-800 hover:text-red-700 font-semibold inline-flex items-center gap-2 transition-colors"
           >
             {t('Виж всички отзиви в Google', 'See all reviews on Google')}
             <span>→</span>

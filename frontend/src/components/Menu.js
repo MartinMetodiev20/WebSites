@@ -49,12 +49,12 @@ const Menu = () => {
           {language === 'bg' ? item.description_bg : item.description_en}
         </p>
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-red-600">
+          <div className="text-2xl font-bold text-amber-800">
             €{item.price.toFixed(2)}
           </div>
           <Button 
             onClick={() => handleAddToCart(item)}
-            className="bg-red-600 hover:bg-red-700 text-white transition-all duration-300 hover:scale-105"
+            className="bg-amber-700 hover:bg-amber-800 text-white transition-all duration-300 hover:scale-105"
           >
             <Plus className="h-4 w-4 mr-2" />
             {t('Добави', 'Add')}
@@ -71,7 +71,7 @@ const Menu = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {t('Нашето меню', 'Our Menu')}
           </h2>
-          <div className="w-20 h-1 bg-red-600 mx-auto mb-6" />
+          <div className="w-20 h-1 bg-amber-700 mx-auto mb-6" />
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             {t(
               'Разгледайте нашите специалитети - от автентична италианска пица до традиционни български ястия',
@@ -86,7 +86,7 @@ const Menu = () => {
               <TabsTrigger 
                 key={cat.id} 
                 value={cat.id}
-                className="text-sm md:text-base py-3 data-[state=active]:bg-red-600 data-[state=active]:text-white transition-all"
+                className="text-sm md:text-base py-3 data-[state=active]:bg-amber-700 data-[state=active]:text-white transition-all"
               >
                 {language === 'bg' ? cat.label_bg : cat.label_en}
               </TabsTrigger>
@@ -108,7 +108,7 @@ const Menu = () => {
         <div className="text-center mt-12">
           <Button 
             size="lg"
-            className="bg-red-600 hover:bg-red-700 text-white px-8 py-6 text-lg transition-all duration-300 hover:scale-105"
+            className="bg-amber-700 hover:bg-amber-800 text-white px-8 py-6 text-lg transition-all duration-300 hover:scale-105"
             onClick={() => {
               const cart = document.querySelector('[data-cart-trigger]');
               if (cart) cart.click();

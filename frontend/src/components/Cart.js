@@ -45,7 +45,7 @@ const Cart = () => {
                   {t('Количката е празна', 'Your cart is empty')}
                 </p>
                 <Button 
-                  className="mt-4 bg-red-600 hover:bg-red-700"
+                  className="mt-4 bg-amber-700 hover:bg-amber-800"
                   onClick={() => setIsCartOpen(false)}
                 >
                   {t('Започни да поръчваш', 'Start Ordering')}
@@ -92,7 +92,7 @@ const Cart = () => {
                           <Button
                             variant="ghost"
                             size="icon"
-                            className="h-8 w-8 ml-auto text-red-600 hover:text-red-700 hover:bg-red-50"
+                            className="h-8 w-8 ml-auto text-amber-800 hover:text-amber-900 hover:bg-red-50"
                             onClick={() => removeFromCart(item.id)}
                           >
                             <Trash2 className="h-4 w-4" />
@@ -112,7 +112,7 @@ const Cart = () => {
                 <div className="border-t pt-4 mb-6">
                   <div className="flex justify-between items-center text-xl font-bold mb-4">
                     <span>{t('Общо:', 'Total:')}</span>
-                    <span className="text-red-600">€{getTotalPrice().toFixed(2)}</span>
+                    <span className="text-amber-800">€{getTotalPrice().toFixed(2)}</span>
                   </div>
                 </div>
 
@@ -120,7 +120,7 @@ const Cart = () => {
                 <Dialog>
                   <DialogTrigger asChild>
                     <Button 
-                      className="w-full bg-red-600 hover:bg-red-700 text-white py-6 text-lg"
+                      className="w-full bg-amber-700 hover:bg-amber-800 text-white py-6 text-lg"
                       size="lg"
                     >
                       {t('Завърши поръчката', 'Complete Order')}
