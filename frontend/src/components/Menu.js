@@ -1,16 +1,11 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { useCart } from '../context/CartContext';
 import { menuData } from '../mock';
-import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
-import { Plus, ShoppingCart } from 'lucide-react';
-import { toast } from 'sonner';
 
 const Menu = () => {
   const { language, t } = useLanguage();
-  const { addToCart } = useCart();
   const [activeCategory, setActiveCategory] = useState('pizza');
 
   const categories = [
@@ -19,15 +14,6 @@ const Menu = () => {
     { id: 'mains', label_bg: 'Основни ястия', label_en: 'Main Courses' },
     { id: 'drinks', label_bg: 'Напитки', label_en: 'Drinks' }
   ];
-
-  const handleAddToCart = (item) => {
-    addToCart(item);
-    toast.success(
-      language === 'bg' 
-        ? `${item.name_bg} е добавен в количката` 
-        : `${item.name_en} added to cart`
-    );
-  };
 
   const MenuItem = ({ item }) => (
     <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 group">
@@ -48,17 +34,8 @@ const Menu = () => {
         <p className="text-gray-600 mb-4 min-h-[48px]">
           {language === 'bg' ? item.description_bg : item.description_en}
         </p>
-        <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-amber-800">
-            €{item.price.toFixed(2)}
-          </div>
-          <Button 
-            onClick={() => handleAddToCart(item)}
-            className="bg-amber-700 hover:bg-amber-800 text-white transition-all duration-300 hover:scale-105"
-          >
-            <Plus className="h-4 w-4 mr-2" />
-            {t('Добави', 'Add')}
-          </Button>
+        <div className="text-2xl font-bold text-amber-800">
+          €{item.price.toFixed(2)}
         </div>
       </CardContent>
     </Card>
@@ -104,20 +81,6 @@ const Menu = () => {
           ))}
         </Tabs>
 
-        {/* Quick Order Button */}
-        <div className="text-center mt-12">
-          <Button 
-            size="lg"
-            className="bg-amber-700 hover:bg-amber-800 text-white px-8 py-6 text-lg transition-all duration-300 hover:scale-105"
-            onClick={() => {
-              const cart = document.querySelector('[data-cart-trigger]');
-              if (cart) cart.click();
-            }}
-          >
-            <ShoppingCart className="mr-2 h-5 w-5" />
-            {t('Виж количката', 'View Cart')}
-          </Button>
-        </div>
       </div>
     </section>
   );

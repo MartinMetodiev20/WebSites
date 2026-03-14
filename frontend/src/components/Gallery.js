@@ -3,8 +3,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { galleryImages } from '../mock';
 
 const Gallery = () => {
-  const { language } = useLanguage();
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
 
   return (
     <section id="gallery" className="py-20 bg-gray-50">

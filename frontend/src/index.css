@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide Emergent watermark */
+[class*="emergent" i],
+[id*="emergent" i],
+a[href*="emergent" i],
+div:has(> a[href*="emergent" i]) {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
 body {
     margin: 0;
     font-family: 'Lora', 'Georgia', serif;

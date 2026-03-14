@@ -46,7 +46,7 @@ const Hero = () => {
 
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in drop-shadow-2xl" style={{fontFamily: "'Playfair Display', serif"}}>
           {t(
-            'Автентична пица и българска кухня в сърцето на Драгалевци',
+            'Автентична домашна пица и българска кухня в сърцето на Драгалевци',
             'Authentic Pizza and Bulgarian Cuisine in the Heart of Dragalevtsi'
           )}
         </h1>

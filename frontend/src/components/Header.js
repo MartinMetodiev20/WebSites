@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { useCart } from '../context/CartContext';
 import { Button } from './ui/button';
-import { Phone, Globe, ShoppingCart, Menu, X } from 'lucide-react';
+import { Phone, Globe, Menu, X } from 'lucide-react';
 
 const Header = () => {
   const { language, toggleLanguage, t } = useLanguage();
-  const { getTotalItems, setIsCartOpen } = useCart();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -81,30 +79,17 @@ const Header = () => {
               </Button>
             </a>
 
-            {/* Language Toggle */}
-            <Button 
-              variant="ghost" 
-              size="icon"
+            <Button
+              variant="ghost"
               onClick={toggleLanguage}
-              className={`${isScrolled ? 'text-amber-900 hover:bg-amber-100' : 'text-white hover:bg-white/10'}`}
+              className={`px-2 ${isScrolled ? 'text-amber-900 hover:bg-amber-100' : 'text-white hover:bg-white/10'}`}
             >
               <Globe className="h-5 w-5" />
-              <span className="ml-1 text-sm font-semibold">{language.toUpperCase()}</span>
-            </Button>
-
-            {/* Cart */}
-            <Button 
-              variant="ghost" 
-              size="icon"
-              onClick={() => setIsCartOpen(true)}
-              className={`relative ${isScrolled ? 'text-amber-900 hover:bg-amber-100' : 'text-white hover:bg-white/10'}`}
-            >
-              <ShoppingCart className="h-5 w-5" />
-              {getTotalItems() > 0 && (
-                <span className="absolute -top-1 -right-1 bg-amber-700 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-bold shadow-lg">
-                  {getTotalItems()}
-                </span>
-              )}
+              <span className="ml-1 text-sm font-semibold">
+                <span className={language === 'en' ? 'opacity-100' : 'opacity-50'}>EN</span>
+                <span className="opacity-50">/</span>
+                <span className={language === 'bg' ? 'opacity-100' : 'opacity-50'}>BG</span>
+              </span>
             </Button>
 
             {/* Mobile Menu Toggle */}

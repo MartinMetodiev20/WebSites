@@ -205,12 +205,12 @@ export const galleryImages = [
 export const reviews = [
   {
     id: 'r1',
-    name: 'Иван Петров',
-    name_en: 'Ivan Petrov',
+    name: 'Анна Рафаилов',
+    name_en: 'Anna Rafailov',
     rating: 5,
-    text_bg: 'Страхотна храна и приятна атмосфера! Кебапчетата са най-добрите в София. Определено ще се върнем!',
-    text_en: 'Great food and pleasant atmosphere! The kebabs are the best in Sofia. We will definitely come back!',
-    date: '2024-01-15'
+    text_bg: 'Този ресторант е забележително място в Драгалевци. Въпреки че се нуждае от сериозно обновяване (моля, направете го), храната все още е добра! Цените са такива, каквито се очакват, но както е казано — такова е положението. През лятото имат прилична градина отзад. Със сигурност ще се върна отново!',
+    text_en: 'This restaurant is a landmark in Dragalevtsi. Although they need serious makeover( please do) the food is still decent! The prices are as expected, but it is what it is! In the summer they have decent back garden! I will be back for sure!',
+    date: '2025-12-15'
   },
   {
     id: 'r2',
@@ -218,26 +218,26 @@ export const reviews = [
     name_en: 'Maria Georgieva',
     rating: 5,
     text_bg: 'Перфектно място за семейна вечеря. Храната е вкусна, обслужването отлично, а цените са разумни.',
-    text_en: 'Perfect place for a family dinner. The food is delicious, the service is excellent, and the prices are reasonable.',
-    date: '2024-01-10'
+    text_en: 'I’ve look for a good Bulgarian restaurant and I finally found one that was SUPER good. The food was FANTASTIC. It was warm and cozy inside and the waitresses was kind',
+    date: '2026-01-13'
   },
   {
     id: 'r3',
-    name: 'Георги Димитров',
-    name_en: 'Georgi Dimitrov',
-    rating: 4,
-    text_bg: 'Много добра пица и уютна атмосфера. Единственото нещо е че понякога има малко повече чакане.',
-    text_en: 'Very good pizza and cozy atmosphere. The only thing is that sometimes there is a bit more waiting.',
-    date: '2024-01-05'
+    name: 'Ивайло Иванов',
+    name_en: 'Ivaylo IVANOV',
+    rating: 5,
+    text_bg: 'Много Чудесно място! Храната беше отлична! Традиционна, семпла, но изключително вкусна! Нашата сервитьорка Каролина беше толкова внимателна и любезна, че нищо не изглеждаше като неудобство за нея. Горещо препоръчвам! Благодаря за прекрасната вечеря!',
+    text_en: 'Wonderful place! Food was excellent! Traditional, simple yet exceptionally tasty! Our server Karolina was so attentive and friendly that nothing seemed to be a bother. Highly recommend! Thank you for the lovely meal!',
+    date: '2026-01-12'
   },
   {
     id: 'r4',
-    name: 'Елена Стоянова',
-    name_en: 'Elena Stoyanova',
+    name: 'Рафаел',
+    name_en: 'Rafael',
     rating: 5,
-    text_bg: 'Любимото ми място в Драгалевци! Автентична българска кухня и страхотна пица. Препоръчвам на всички!',
-    text_en: 'My favorite place in Dragalevtsi! Authentic Bulgarian cuisine and great pizza. I recommend it to everyone!',
-    date: '2023-12-28'
+    text_bg: 'Търсих добър български ресторант и най-накрая намерих такъв, който беше страхотен. Храната беше фантастична. Вътре беше топло и уютно, а сервитьорките бяха мили и любезни.',
+    text_en: 'I’ve look for a good Bulgarian restaurant and I finally found one that was SUPER good. The food was FANTASTIC! It was warm and cozy inside and the waitresses was kind.',
+    date: '2026-01-14'
   }
 ];
 
@@ -253,6 +253,6 @@ export const restaurantInfo = {
   hours_en: 'Open daily until 00:00',
   services_bg: ['Хранене на място', 'Вземане от място', 'Доставка'],
   services_en: ['Dine-in', 'Takeaway', 'Delivery'],
-  facebook: 'https://facebook.com',
-  mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.6!2d23.253!3d42.635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDM4JzA2LjAiTiAyM8KwMTUnMTAuOCJF!5e0!3m2!1sen!2sbg!4v1234567890'
+  facebook: 'https://www.facebook.com/chichovtsi.dragalevtsi',
+  mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953!2d23.3091829!3d42.628646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa8392a0fc43b1:0x46e6dabdb51e5c72!2sPizzeria+Restaurant+Chichhovtsi!5e0!3m2!1sbg!2sbg!4v1741000000000'
 };

@@ -33,8 +33,8 @@ const Footer = () => {
             </h3>
             <p className="text-amber-200/80 mb-4 text-sm" style={{fontFamily: "'Lora', serif"}}>
               {t(
-                'Автентична българска кухня и ароматна италианска пица в сърцето на Драгалевци',
-                'Authentic Bulgarian cuisine and aromatic Italian pizza in the heart of Dragalevtsi'
+                'Автентична българска кухня и ароматна домашна пица в сърцето на Драгалевци',
+                'Authentic Bulgarian cuisine and aromatic pizza in the heart of Dragalevtsi'
               )}
             </p>
             <div className="flex items-center gap-2">

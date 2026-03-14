@@ -17,8 +17,8 @@ const About = () => {
               <div className="tavern-divider mb-6" />
               <p className="text-lg text-stone-700 mb-6 leading-relaxed" style={{fontFamily: "'Lora', serif"}}>
                 {t(
-                  'Пицария Ресторант "Чичовци" е любимо място в Драгалевци, където традиционната българска кухня се среща с ароматна италианска пица.',
-                  'Pizzeria Restaurant "Chichovtsi" is a favorite place in Dragalevtsi, where traditional Bulgarian cuisine meets aromatic Italian pizza.'
+                  'Пицария Ресторант "Чичовци" е любимо място в Драгалевци, където традиционната българска кухня се среща с ароматна домашна пица.',
+                  'Pizzeria Restaurant "Chichovtsi" is a favorite place in Dragalevtsi, where traditional Bulgarian cuisine meets aromatic pizza.'
                 )}
               </p>
               <p className="text-lg text-stone-700 mb-6 leading-relaxed" style={{fontFamily: "'Lora', serif"}}>
